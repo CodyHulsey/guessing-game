@@ -21,40 +21,42 @@
     </ul>
   </footer>
   <script>
+    var userName = prompt('What\'s your name?');
+    console.log('The visitor\'s name is: ' + userName)
     var favFood = prompt('Do I like tacos?'); //This is a prompt that pops up and asks if I like tacos.
     //if (favFood == 'Yes') { This evaluates loosly typed data
     if (favFood === 'yes') { // This evaluates strictly typed data
-    alert('Yes, I love tacos.'); // This will alert the visitor if they typed yes into the entry box.
+    alert('Yes, ' + userName + '. I love tacos.'); // This will alert the visitor if they typed yes into the entry box.
     console.log('The user entered:' + favFood + ' Which equates to Yes.');
     } else {
-    alert('No, mi amigo. I love Tacos.'); // This is what the viewer will see if they answer anything besides yes
+    alert('No, ' + userName + '. I love Tacos.'); // This is what the viewer will see if they answer anything besides yes
     console.log('The user entered:' + favFood + ' Which equates to No.');
     }
     var favDrink = prompt('Do I like the drink called, "Tom Collins?"');
     if (favDrink === 'yes') {
-    alert('Yes. That is my drink of choice!') // This will alert the visitor if they typed yes into the entry box.
+    alert('Yes, ' + userName + '. That is my drink of choice!') // This will alert the visitor if they typed yes into the entry box.
     console.log('The user entered:' + favDrink + ' Which equates to Yes.');
     } else {
-    alert('Wrong my friend. Tom Collins is my drink of choice.') // This is what the viewer will see if they answer anything besides yes
+    alert('Wrong, ' + userName + '. Tom Collins is my drink of choice.') // This is what the viewer will see if they answer anything besides yes
     console.log('The user entered: ' + favDrink + ' Which equates to No.');
     }
     var favMusician = prompt('Do I like the musician named Future?');
     if (favMusician === 'yes') {
-    alert('Yes. Future is one of my favorite rappers at this moment.') // This will alert the visitor if they typed yes into the entry box.
+    alert('Yes, ' + userName + '. Future is one of my favorite rappers at this moment.') // This will alert the visitor if they typed yes into the entry box.
     console.log('The user entered: ' + favMusician + ' Which equates to Yes.');
     } else {
-    alert('You\'re wrong my friend. I like Future and think he is crushing the rap game right now.') // This is what the viewer will see if they answer anything besides yes
+    alert('You\'re wrong, ' + userName + '. I like Future and think he is crushing the rap game right now.') // This is what the viewer will see if they answer anything besides yes
     console.log('The user entered: ' + favMusician + ' Which equates to No.');
     }
     var num = prompt('How old do you think I am?');
     if (num === '23') {
-    alert('Woah. That is correct. How did you pull that off?')
+    alert('Woah, ' + userName + '. That is correct. How did you pull that off?')
     console.log('Number input from user Prompt: ' + num);
     } else if (num < '23') {
-    alert('C\'mon man. I am older than ' + num)
+    alert('C\'mon, ' + userName + '. I am older than ' + num + '. I am actually 23 years old.')
     console.log('Number input from user Prompt: ' + num);
     } else if (num > '23') {
-    alert('C\'mon man. I am younger than ' + num)
+    alert('C\'mon, ' + userName + '. I am younger than ' + num + '. I am actually 23 years old.')
     console.log('Number input from user Prompt: ' + num);
     }
   </script>

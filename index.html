@@ -23,6 +23,7 @@
   <script>
     var userName = prompt('What\'s your name?');
     console.log('The visitor\'s name is: ' + userName)
+
     var favFood = prompt('Do I like tacos?'); //This is a prompt that pops up and asks if I like tacos.
     //if (favFood == 'Yes') { This evaluates loosly typed data
     if (favFood === 'yes') { // This evaluates strictly typed data
@@ -48,16 +49,16 @@
     alert('You\'re wrong, ' + userName + '. I like Future and think he is crushing the rap game right now.') // This is what the viewer will see if they answer anything besides yes
     console.log('The user entered: ' + favMusician + ' Which equates to No.');
     }
-    var num = prompt('How old do you think I am?');
-    if (num === '23') {
+    var age = prompt('How old do you think I am?');
+    if (age === '23') {
     alert('Woah, ' + userName + '. That is correct. How did you pull that off?')
-    console.log('Number input from user Prompt: ' + num);
-    } else if (num < '23') {
-    alert('C\'mon, ' + userName + '. I am older than ' + num + '. I am actually 23 years old.')
-    console.log('Number input from user Prompt: ' + num);
-    } else if (num > '23') {
-    alert('C\'mon, ' + userName + '. I am younger than ' + num + '. I am actually 23 years old.')
-    console.log('Number input from user Prompt: ' + num);
+    console.log('Number input from user Prompt: ' + age);
+    } else if (age < '23') {
+    alert('C\'mon, ' + userName + '. I am older than ' + age + '. I am actually 23 years old.')
+    console.log('Number input from user Prompt: ' + age);
+    } else if (age > '23') {
+    alert('C\'mon, ' + userName + '. I am younger than ' + age + '. I am actually 23 years old.')
+    console.log('Number input from user Prompt: ' + age);
     }
   </script>
   </body>

@@ -25,17 +25,27 @@
     //if (favFood == 'Yes') { This evaluates loosly typed data
     if (favFood === 'yes') { // This evaluates strictly typed data
     alert('Yes, I love tacos.');
+    console.log('The user entered :' + favFood + ' Which equates to Yes.');
     } else {
     alert('mi amigo. I love Tacos.');
+    console.log('The user entered :' + favFood + ' Which equates to No.');
     }
-    console.log(favFood)
     var favDrink = prompt('Do I like the drink called, "Tom Collins?"');
-    if (favDrink = 'yes') {
+    if (favDrink === 'yes') {
     alert('Yes. That is my drink of choice!')
+    console.log('The user entered :' + favDrink + ' Which equates to Yes.');
     } else {
     alert('Wrong my friend. Tom Collins is my drink of choice.')
+    console.log('The user entered : ' + favDrink + ' Which equates to No.');
     }
-    console.log('The user entered in this answer:' + favFood);
+    var favMusician = prompt('Do I like the musician named Future?');
+    if (favDrink === 'yes') {
+    alert('Yes. Future is one of my favorite rappers at this moment.')
+    console.log('The user entered : ' + favMusician + ' Which equates to Yes.');
+    } else {
+    alert('No. Future is crushing the rap game right now.')
+    console.log('The user entered : ' + favMusician + ' Which equates to No.');
+    }
   </script>
   </body>
 </html>

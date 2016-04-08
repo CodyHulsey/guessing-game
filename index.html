@@ -39,12 +39,23 @@
     console.log('The user entered : ' + favDrink + ' Which equates to No.');
     }
     var favMusician = prompt('Do I like the musician named Future?');
-    if (favDrink === 'yes') {
+    if (favMusician === 'yes') {
     alert('Yes. Future is one of my favorite rappers at this moment.')
     console.log('The user entered : ' + favMusician + ' Which equates to Yes.');
     } else {
     alert('No. Future is crushing the rap game right now.')
     console.log('The user entered : ' + favMusician + ' Which equates to No.');
+    }
+    var num = prompt('How old do you think I am?');
+    if (num === '23') {
+    alert('Woah. That is correct. How did you pull that off?')
+    console.log('Number input from user Prompt: ' + num);
+    } else if (num < '23') {
+    alert('C\'mon man. I am older than ' + num)
+    console.log('Number input from user Prompt: ' + num);
+    } else if (num > '23') {
+    alert('C\'mon man. I am younger than ' + num)
+    console.log('Number input from user Prompt: ' + num);
     }
   </script>
   </body>

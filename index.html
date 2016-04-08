@@ -23,13 +23,19 @@
   <script>
     var favFood = prompt('Do I like tacos?'); //This is a prompt that pops up and asks if I like tacos.
     //if (favFood == 'Yes') { This evaluates loosly typed data
-    if (favFood === 'Yes') { // This evaluates strictly typed data
-    alert(favFood + ', I love tacos.');
+    if (favFood === 'yes') { // This evaluates strictly typed data
+    alert('Yes, I love tacos.');
     } else {
     alert('mi amigo. I love Tacos.');
     }
-
     console.log(favFood)
+    var favDrink = prompt('Do I like the drink called, "Tom Collins?"');
+    if (favDrink = 'yes') {
+    alert('Yes. That is my drink of choice!')
+    } else {
+    alert('Wrong my friend. Tom Collins is my drink of choice.')
+    }
+    console.log('The user entered in this answer:' + favFood);
   </script>
   </body>
 </html>

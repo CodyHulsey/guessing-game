@@ -25,16 +25,16 @@ if (favMusician.toLowerCase() === 'yes') {
     alert('You\'re wrong, ' + userName + '. I like Future and think he is crushing the rap game right now.'); // This is what the viewer will see if they answer anything besides yes
     console.log('The user entered: ' + favMusician + ' Which equates to No.'); //This is logging the visitors answer to the system
 }
-var age = prompt('How old do you think I am?');
-if (age === '23') {
+var favNumber = prompt('Guess my favorite number');
+if (favNumber === '13') {
   alert('Woah, ' + userName + '. That is correct. How did you pull that off?');
-  console.log('Number input from user Prompt: ' + age); //This is logging the visitors answer to the system
-} else if (age < '23') {
-    alert('C\'mon, ' + userName + '. I am older than ' + age + '. I am actually 23 years old.'); // This is what the viewer will see if they answer anything less than 23
-    console.log('Number input from user Prompt: ' + age); //This is logging the visitors answer to the system
+  console.log('Number input from user Prompt: ' + favNumber); //This is logging the visitors answer to the system
+} else if (favNumber < '13') {
+    alert('You guessed: ' + favNumber + '. That is too low.'); // This is what the viewer will see if they answer anything less than 23
+    console.log('Number input from user Prompt: ' + favNumber); //This is logging the visitors answer to the system
 } else {
-    alert('C\'mon, ' + userName + '. I am younger than ' + age + '. I am actually 23 years old.'); // This is what the viewer will see if they answer anything more than 23
-    console.log('Number input from user Prompt: ' + age); //This is logging the visitors answer to the system
+    alert('You guessed: ' + favNumber + '. That is too high.'); // This is what the viewer will see if they answer anything more than 23
+    console.log('Number input from user Prompt: ' + favNumber); //This is logging the visitors answer to the system
 }
 
 

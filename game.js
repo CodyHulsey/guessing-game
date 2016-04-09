@@ -53,18 +53,35 @@ if (favNumber === '13') {
     console.log('Number input from user Prompt: ' + favNumber); //This is logging the visitors answer to the system
 }
 
+var counter = 0;
+var userNum = parseInt(prompt('Guess my number!'));
+while(counter <= 2) {
+  if (userNum === 5) {
+    alert('You nailed it.');
+    rightAnswer++;
+    break;
+  } else if (userNum > 5) {
+    alert ('Your number was too high!')
+    counter++;
+    wrongAnswer++;
+    console.log('The counter is at ' + counter);
+    userNum = parseInt(prompt('Guess lower.'));
+    // counter += 1;
+    // counter = conter + 1;
+  } else if (userNum < 5) {
+    alert('Your number was too low!');
+    counter++;
+    wrongAnswer++;
+    console.log('The counter is at ' + counter);
+    userNum = parseInt(prompt('Guess higher.'));
+  }
+}
+
 if (rightAnswer > wrongAnswer) {
-alert('Congratulations! You got ' + rightAnswer + ' answers correct. You really know me.')
+alert('Congratulations! You got ' + rightAnswer + ' answer(s) correct and ' + wrongAnswer + ' answer(s) wrong. You really know me.')
 } else {
-  alert('Bummer! You got ' + wrongAnswer + ' answers wrong. You don\'t know me that well.')
+  alert('Bummer! You got ' + wrongAnswer + ' answer(s) wrong and ' + rightAnswer + ' answer(s) right. Better luck next time.')
 }
-
-var userNum =parseInt(prompt('Guess my number'))
-while (userNum !== 10) {
-  console.log(userNum);
-  userNum = parseInt(prompt('That is incorrect. Guess my number again.'));
-}
-
 
 //var userName = prompt('Tell me your name.');
 //var message = 'This is a test.';

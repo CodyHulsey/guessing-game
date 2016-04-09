@@ -7,7 +7,8 @@ var wrongAnswer = 0;
 var favFood = prompt('Do I like tacos?'); //This is a prompt that pops up and asks if I like tacos.
 if (favFood.toLowerCase() === 'yes') {
   alert('You are correct, ' + userName + '. I love tacos.'); // This will alert the visitor if they typed yes into the entry box.
-  rightAnswer++; //If the user gets the right answer it gets them 1 point.
+  rightAnswer++; //If the user gets the right answer they get 1 point.
+  console.log('since the user got the right answer, they get: ' + rightAnswer + '.');
   console.log('The user entered:' + favFood + ' Which equates to Yes.'); //This is logging the visitors answer to the system
 } else {
     alert('You are incorrect, ' + userName + '. I love Tacos.'); // This is what the viewer will see if they answer anything besides yes
@@ -17,7 +18,8 @@ if (favFood.toLowerCase() === 'yes') {
 var favDrink = prompt('Do I like the drink called, "Tom Collins?"'); //This is asking the user if I like Tom Collins'
 if (favDrink.toLowerCase() === 'yes') {
   alert('You are correct, ' + userName + '. That is my drink of choice!'); // This will alert the visitor if they typed yes into the entry box.
-  rightAnswer++; // If the user gets the right answer it gets them 1 point.
+  rightAnswer++; // If the user gets the right answer they get 1 point.
+  console.log('since the user got the right answer, they get: ' + rightAnswer + '.');
   console.log('The user entered:' + favDrink + ' Which equates to Yes.'); //This is logging the visitors answer to the system
 } else {
     alert('You are incorrect, ' + userName + '. Tom Collins is my drink of choice.'); // This is what the viewer will see if they answer anything besides yes
@@ -28,6 +30,7 @@ var favMusician = prompt('Do I like the musician named Future?');
 if (favMusician.toLowerCase() === 'yes') {
   alert('You are right, ' + userName + '. Future is one of my favorite rappers at this moment.'); // This will alert the visitor if they typed yes into the entry box.
   rightAnswer++; //If the user gets the right answer it gets them 1 point.
+  console.log('since the user got the right answer, they get: ' + rightAnswer + '.');
   console.log('The user entered: ' + favMusician + ' Which equates to Yes.'); //This is logging the visitors answer to the system
 } else {
     alert('You\'re wrong, ' + userName + '. I like Future and think he is crushing the rap game right now.'); // This is what the viewer will see if they answer anything besides yes
@@ -38,6 +41,7 @@ var favNumber = prompt('Guess my favorite number');
 if (favNumber === '13') {
   alert('Woah, ' + userName + '. That is correct. How did you pull that off?');
   rightAnswer++; //If the user gets the right answer it gets them 1 point.
+  console.log('since the user got the right answer, they get: ' + rightAnswer + '.');
   console.log('Number input from user Prompt: ' + favNumber); //This is logging the visitors answer to the system
 } else if (favNumber < '13') {
     alert('You guessed: ' + favNumber + '. That is too low.'); // This is what the viewer will see if they answer anything less than 23
@@ -52,10 +56,14 @@ if (favNumber === '13') {
 if (rightAnswer > wrongAnswer) {
 alert('Congratulations! You got ' + rightAnswer + ' answers correct. You really know me.')
 } else {
-  alert('Bummer! You only got ' + wrongAnswer + ' answers correct. You don\'t know me that well.')
+  alert('Bummer! You got ' + wrongAnswer + ' answers wrong. You don\'t know me that well.')
 }
 
-
+var userNum =parseInt(prompt('Guess my number'))
+while (userNum !== 10) {
+  console.log(userNum);
+  userNum = parseInt(prompt('That is incorrect. Guess my number again.'));
+}
 
 
 //var userName = prompt('Tell me your name.');

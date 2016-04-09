@@ -1,6 +1,6 @@
 README file | Class 3 | Assignment 3
 
-Prepared by: Cody Hulsey
+Author: Cody Hulsey
 
 What I did for this assignment:
 - Created a new repo titled Class-03

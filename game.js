@@ -5,7 +5,7 @@ var rightAnswer = 0;
 var wrongAnswer = 0;
 
 var favFood = prompt('Do I like tacos?'); //This is a prompt that pops up and asks if I like tacos.
-if (favFood.toLowerCase() === 'yes') {
+if (favFood.toLowerCase() === 'yes' || 'y' || 'ye') {
   alert('You are correct, ' + userName + '. I love tacos.'); // This will alert the visitor if they typed yes into the entry box.
   rightAnswer++; //If the user gets the right answer they get 1 point.
   console.log('This answer was correct. ' + userName + ' gets a point.');
@@ -17,7 +17,7 @@ if (favFood.toLowerCase() === 'yes') {
     console.log('The user entered: ' + favFood + ' which equates to No.'); //This is logging the visitors answer to the system
 }
 var favDrink = prompt('Do I like the drink called, "Tom Collins?"'); //This is asking the user if I like Tom Collins'
-if (favDrink.toLowerCase() === 'yes') {
+if (favDrink.toLowerCase() === 'yes' || 'y' || 'ye') {
   alert('You are correct, ' + userName + '. That is my drink of choice!'); // This will alert the visitor if they typed yes into the entry box.
   rightAnswer++; // If the user gets the right answer they get 1 point.
   console.log('This answer was correct. ' + userName + ' gets a point.');
@@ -29,7 +29,7 @@ if (favDrink.toLowerCase() === 'yes') {
     console.log('The user entered: ' + favDrink + ' which equates to No.'); //This is logging the visitors answer to the system
 }
 var favMusician = prompt('Do I like the musician named Future?');
-if (favMusician.toLowerCase() === 'yes') {
+if (favMusician.toLowerCase() === 'yes' || 'y' || 'ye') {
   alert('You are right, ' + userName + '. Future is one of my favorite rappers at this moment.'); // This will alert the visitor if they typed yes into the entry box.
   rightAnswer++; //If the user gets the right answer it gets them 1 point.
   console.log('This answer was correct. ' + userName + ' gets a point.');

@@ -13,7 +13,7 @@ if (favFood.toLowerCase() === 'yes') {
 } else {
     alert('You are incorrect, ' + userName + '. I love Tacos.'); // This is what the viewer will see if they answer anything besides yes
     wrongAnswer++; //If the user gets the wrong answer it does not give them a point.
-    console.log('This answer was incorrect. ' + userName + ' doesn\'s get a point.');
+    console.log('This answer was incorrect. ' + userName + ' doesn\'t get a point.');
     console.log('The user entered: ' + favFood + ' which equates to No.'); //This is logging the visitors answer to the system
 }
 var favDrink = prompt('Do I like the drink called, "Tom Collins?"'); //This is asking the user if I like Tom Collins'

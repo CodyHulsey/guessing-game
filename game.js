@@ -6,28 +6,45 @@ var wrongAnswer = 0;
 var pElAnswerOne = document.getElementById('answerOne');
 var pELanswerTwo = document.getElementById('answerTwo');
 var pElAnswerThree = document.getElementById('answerThree');
+var pElAnswerFour = document.getElementById('answerFour');
 
-var els = [pElAnswerOne, pELanswerTwo, pElAnswerThree];
+var els = [pElAnswerOne, pELanswerTwo, pElAnswerThree, pElAnswerFour];
 
 var questions = [
   "Do I like tacos?",
   "Do I like a drink called 'Tom Collins'?",
-  "Do I like the musician, 'Future'?"
+  "Do I like the musician, 'Future'?",
+  "What's my favorite number?",
 ];
 
 var answers = [
   "Yes",
   "Yes",
   "Yes",
+  5,
 ];
 
 function guessingGame(questions, answers, els) {
   var userInput = prompt(questions);
   if (userInput.toLowerCase() === 'yes' || userInput.toLowerCase() === 'y' || userInput.toLowerCase() === 'ye') {
     els.textContent = "You are correct, " + userName + ".";
-  } else {
-    els.textContent = "You are incorrect, " + userName + ".";
-  };
+  } else if (parseInt(userInput) && isNaN(userInput) === false) {
+    var counter = 0;
+    while (counter <= 2) {
+      if (userInput === 5){
+        els.textContent = "You are correct, " + userName + ".";
+        break;
+      } else if (userInput > 5){
+        els.textContent = "You are incorrect, too high, " + userName + ".";
+        counter++;
+      } else if (userInput < 5){
+        els.textContent = "You are incorrect, too low, " + userName + ".";
+        counter++;
+        }
+      }
+    } else {
+        els.textContent = "You are incorrect, " + userName + ".";
+    }
 }
 
 for(var i = 0; i < questions.length; i++) {

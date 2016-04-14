@@ -2,6 +2,10 @@ README file | Class 3 | Assignment 3
 
 Author: Cody Hulsey
 
+Added by Chris:
+- Built logic of guessing game into a function
+- Moved alerts into browser window through targeting HTML elements
+
 What I did for this assignment:
 - Created a new repo titled Class-03
 - Created a README.md file

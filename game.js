@@ -5,36 +5,36 @@ var rightAnswer = 0;
 var wrongAnswer = 0;
 
 var favFood = prompt('Do I like tacos?'); //This is a prompt that pops up and asks if I like tacos.
-if (favFood.toLowerCase() === 'yes' || 'y' || 'ye') {
+if (favFood.toLowerCase() === 'yes') {
   alert('You are correct, ' + userName + '. I love tacos.'); // This will alert the visitor if they typed yes into the entry box.
   rightAnswer++; //If the user gets the right answer they get 1 point.
   console.log('This answer was correct. ' + userName + ' gets a point.');
   console.log('The user entered:' + favFood + ' which equates to Yes.'); //This is logging the visitors answer to the system
-} else {
+} else if (favFood.toLowerCase() === 'no') {
     alert('You are incorrect, ' + userName + '. I love Tacos.'); // This is what the viewer will see if they answer anything besides yes
     wrongAnswer++; //If the user gets the wrong answer it does not give them a point.
     console.log('This answer was incorrect. ' + userName + ' doesn\'t get a point.');
     console.log('The user entered: ' + favFood + ' which equates to No.'); //This is logging the visitors answer to the system
 }
 var favDrink = prompt('Do I like the drink called, "Tom Collins?"'); //This is asking the user if I like Tom Collins'
-if (favDrink.toLowerCase() === 'yes' || 'y' || 'ye') {
+if (favDrink.toLowerCase() === 'yes') {
   alert('You are correct, ' + userName + '. That is my drink of choice!'); // This will alert the visitor if they typed yes into the entry box.
   rightAnswer++; // If the user gets the right answer they get 1 point.
   console.log('This answer was correct. ' + userName + ' gets a point.');
   console.log('The user entered:' + favDrink + ' which equates to Yes.'); //This is logging the visitors answer to the system
-} else {
+} else if (favDrink.toLowerCase() === 'no') {
     alert('You are incorrect, ' + userName + '. Tom Collins is my drink of choice.'); // This is what the viewer will see if they answer anything besides yes
     wrongAnswer++; //If the user gets the wrong answer it does not give them a point.
     console.log('This answer was incorrect. ' + userName + ' doesn\'t get a point.');
     console.log('The user entered: ' + favDrink + ' which equates to No.'); //This is logging the visitors answer to the system
 }
 var favMusician = prompt('Do I like the musician named Future?');
-if (favMusician.toLowerCase() === 'yes' || 'y' || 'ye') {
+if (favMusician.toLowerCase() === 'yes') {
   alert('You are right, ' + userName + '. Future is one of my favorite rappers at this moment.'); // This will alert the visitor if they typed yes into the entry box.
   rightAnswer++; //If the user gets the right answer it gets them 1 point.
   console.log('This answer was correct. ' + userName + ' gets a point.');
   console.log('The user entered: ' + favMusician + ' which equates to Yes.'); //This is logging the visitors answer to the system
-} else {
+} else if (favMusician.toLowerCase() === 'no') {
     alert('You\'re wrong, ' + userName + '. I like Future and think he is crushing the rap game right now.'); // This is what the viewer will see if they answer anything besides yes
     wrongAnswer++; //If the user gets the wrong answer it does not give them a point.
     console.log('This answer was incorrect. ' + userName + ' doesn\'t get a point.');
